@@ -17,14 +17,14 @@ public class VariablesTheme  {
         float SumDisc;
         SumDisc = (price1 + price2)*discount/100;
         SumIncludedDisc = (price1 + price2) - SumDisc;
-        // System.out.println("Discount: " + SumDisc);
-        // System.out.println("Discounted amount: " + SumIncludedDisc);
+         System.out.println("Discount: " + SumDisc);
+         System.out.println("Discounted amount: " + SumIncludedDisc);
 
         //3.
-        System.out.println("   J    a  v     v  a" );
-        System.out.println("   J   a a  v   v  a a");
-        System.out.println("J  J  aaaaa  V V  aaaaa");
-        System.out.println(" JJ  a     a  V  a     a");                 
+       // System.out.println("   J    a  v     v  a" );
+        //System.out.println("   J   a a  v   v  a a");
+        //System.out.println("J  J  aaaaa  V V  aaaaa");
+        //System.out.println(" JJ  a     a  V  a     a");                 
 
     }
 }
