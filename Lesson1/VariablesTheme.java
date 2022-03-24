@@ -1,15 +1,27 @@
 public class VariablesTheme  {	
     public static void main(String[] args) {
-        //System.out.println("Write once, run anywhere");
-        int num = 12;
-        float num2 = 23.45f;
-        double num3 = 23.456677777777777d;
-        boolean IsTrue = true;
-        char Sym = 'a';
-        String Str = "Hello, world!";
-        //System.out.println(Str);
+        
+        //1. Variable creation
+        byte diskCapacity_Tb = 1;
+        short diskCapacity_Gb = 1000;
+        int diskCapacity_Mb = 1000000;
+        long diskCapacity_Kb = 1000000000;
+        float memory_Gb = 47.9f;
+        double procFrequency_Ghz = 3.2d;
+        char systemDisk = 'C';
+        boolean pcForGame = false;
+        //string Str = "Hello, world!";
 
-        //2. Вывод итоговой суммы товара со скидкой и суммы скидки
+        System.out.println(diskCapacity_Tb);
+        System.out.println(diskCapacity_Gb);
+        System.out.println(diskCapacity_Mb);
+        System.out.println(diskCapacity_Kb);
+        System.out.println(memory_Gb);
+        System.out.println(procFrequency_Ghz);
+        System.out.println(systemDisk);
+        System.out.println(pcForGame);
+
+        //2. Output Discounted amount and discount
         float price1 = 100f;
         float price2 = 200f;
         int discount = 11;
@@ -20,11 +32,11 @@ public class VariablesTheme  {
          System.out.println("Discount: " + SumDisc);
          System.out.println("Discounted amount: " + SumIncludedDisc);
 
-        //3.
-       // System.out.println("   J    a  v     v  a" );
-        //System.out.println("   J   a a  v   v  a a");
-        //System.out.println("J  J  aaaaa  V V  aaaaa");
-        //System.out.println(" JJ  a     a  V  a     a");                 
+        //3. Output JAVA
+        System.out.println("   J    a  v     v  a" );
+        System.out.println("   J   a a  v   v  a a");
+        System.out.println("J  J  aaaaa  V V  aaaaa");
+        System.out.println(" JJ  a     a  V  a     a");                 
 
     }
 }
