@@ -113,6 +113,44 @@ public class VariablesTheme  {
         System.out.println(hundreds + tens + units);
         System.out.println(hundreds * tens * units);
 
+        //8. Output ASCII-art
+        char spaceBar = (char)32;
+        char ch1 = (char)47;//"/"
+        char ch2 = (char)92;//"\"
+        char underline = (char)95;
+        char openingBrace= (char)40;
+        char closingBrace= (char)41;
 
+        System.out.println("8. Output ASCII-art");
+        System.out.println(String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(ch1) 
+                            + String.valueOf(ch2) + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(spaceBar));
+        System.out.println(String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(ch1) + String.valueOf(spaceBar) 
+                            + String.valueOf(spaceBar) + String.valueOf(ch2) + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(spaceBar));
+        System.out.println(String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(ch1) + String.valueOf(underline) + String.valueOf(openingBrace) 
+                            + String.valueOf(spaceBar) + String.valueOf(closingBrace) + String.valueOf(ch2) + String.valueOf(spaceBar) + String.valueOf(spaceBar));
+        System.out.println(String.valueOf(spaceBar) + String.valueOf(ch1) + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(spaceBar) 
+                            + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(spaceBar) + String.valueOf(ch2) + String.valueOf(spaceBar));
+        System.out.println(String.valueOf(ch1) + String.valueOf(underline) + String.valueOf(underline) + String.valueOf(underline) + String.valueOf(underline) 
+                            + String.valueOf(ch1) + String.valueOf(ch2) + String.valueOf(underline) + String.valueOf(underline) + String.valueOf(ch2));
+
+        //9. Output number of hundreds, tens and units
+        int m = 123;
+        int hundreds1 = m/100;
+        int tens1 = (m - 100*hundreds1)/10;
+        int units1 = (m - 100*hundreds1 - 10*tens1);
+
+        System.out.println("9. Output number of hundreds, tens and units");
+        System.out.println("Number of hundreds: " + hundreds1);
+        System.out.println("Number of tens: " + tens1);
+        System.out.println("Number of units: " + units1);
+
+        //10. Seconds conversion
+        int sec = 86399;
+        int hh = 86399/3600;
+        int mm = (86399%3600)/60;
+        int ss = (86399%3600)%60;
+
+        System.out.println("9. Output number of hundreds, tens and units");
+        System.out.println("hh:mm:ss: " + hh + ":" + mm + ":" + ss);
     }
 }
