@@ -146,7 +146,7 @@ public class VariablesTheme  {
 
         //10. Seconds conversion
         int sec = 86399;
-        int hh = 86399/3600;
+        int hh = sec/3600;
         int mm = (86399%3600)/60;
         int ss = (86399%3600)%60;
 

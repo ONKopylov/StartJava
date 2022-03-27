@@ -1,7 +1,7 @@
 
 import java.util.Scanner;//fgh
 
-public class ConditionsTheme {
+public class Conditions_Example1_Scanner {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
     
