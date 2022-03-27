@@ -1,5 +1,5 @@
 
-import java.util.Scanner;
+import java.util.Scanner;//fgh
 
 public class ConditionsTheme {
     public static void main(String[] args) {
