@@ -151,6 +151,6 @@ public class VariablesTheme  {
         int ss = (86399%3600)%60;
 
         System.out.println("9. Output number of hundreds, tens and units");
-        System.out.println("hh:mm:ss: " + hh + ":" + mm + ":" + ss);
+        System.out.println("HH:MM:SS: " + hh + ":" + mm + ":" + ss);
     }
 }
