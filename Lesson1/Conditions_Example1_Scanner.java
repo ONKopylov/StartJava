@@ -1,5 +1,5 @@
 
-import java.util.Scanner;//fgh
+import java.util.Scanner;
 
 public class Conditions_Example1_Scanner {
     public static void main(String[] args) {
