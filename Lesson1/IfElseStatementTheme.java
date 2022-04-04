@@ -79,25 +79,82 @@ public class IfElseStatementTheme {
 
         // 4. Поиск общей цифры в числах
 
-        int x = 345;
+        int x = 735;
         int y = 745;
 
         System.out.println("4. Поиск общей цифры в числах");
 
         int hundred_x = x/100;
         int hundred_y = y/100;
-        int tens_x = (x - hundred_x)/10;
-        int tens_y = (y - hundred_y)/10;
-        int units_x = x - hundred_x - tens_x;
-        int units_y = y - hundred_y - tens_y;
+        int tens_x = (x - hundred_x*100)/10;
+        int tens_y = (y - hundred_y*100)/10;
+        int units_x = x - hundred_x*100 - tens_x*10;
+        int units_y = y - hundred_y*100 - tens_y*10;
 
-        if (hundred_x = hundred_y) {
-            System.out.println("Совпадают сотни - " + x.);
+        if (hundred_x == hundred_y) {
+            System.out.println("Совпадают сотни - " + (hundred_x));
         }
 
+        if (tens_x == tens_y) {
+            System.out.println("Совпадают десятки - " + (tens_x));
+        }
 
+        if (units_x == units_y) {
+            System.out.println("Совпадают единицы - " + (units_x));
+        }
 
+        System.out.println();
 
+        // 5. Определение буквы, числа или символа по их коду tdebt
+        
+        System.out.println("5. Определение буквы, числа или символа по их коду");
+
+        char m = '\u005A';
+        
+
+        System.out.println(m);
+
+        System.out.println();
+        
+        // 6. Определение суммы вклада и начисленных банков процентов
+        
+        System.out.println("6. Определение суммы вклада и начисленных банков процентов");
+
+        int bankDeposit = 300000;
+        float depositInterest;
+        float sum;
+
+        if (bankDeposit < 100000) {
+            depositInterest = bankDeposit*0.5f;
+            sum = bankDeposit + depositInterest;
+        } else if (bankDeposit >= 100000 && bankDeposit < 300000){
+            depositInterest = bankDeposit*0.7f;
+            sum = bankDeposit + depositInterest;
+        } else {
+            depositInterest = bankDeposit*0.1f;
+            sum = bankDeposit + depositInterest;
+        }
+        
+        System.out.println("Сумма вклада: " + bankDeposit);
+        System.out.println("Начисленный процент: " + depositInterest);
+        System.out.println("Итоговая сумма: " + sum);
+
+        System.out.println();
+
+        //7. Определение оценки по предметам
+
+        System.out.println("7. Определение оценки по предметам");
+        
+        int resultHistory = 59;
+        int resultProgramming = 91;
+
+        if (isMale) {
+            
+        } else {
+            
+        }
+
+        System.out.println();
 
     }
 
