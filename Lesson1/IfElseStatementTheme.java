@@ -1,3 +1,4 @@
+import java.util.prefs.PreferenceChangeListener;
 
 public class IfElseStatementTheme {
     public static void main(String[] args) {
@@ -145,16 +146,101 @@ public class IfElseStatementTheme {
 
         System.out.println("7. Определение оценки по предметам");
         
-        int resultHistory = 59;
-        int resultProgramming = 91;
+        int percHistory = 59;
+        int resultHistory;
+        int percProgramming = 91;
+        int resultProgramming;
+        float averageResult;
+        float averagePers;
 
-        if (isMale) {
-            
+        if (percHistory <=60) {
+            resultHistory = 2;
+        } else if (percHistory > 60 && percHistory <= 73) {
+            resultHistory = 3;    
+        } else if (percHistory > 73 && percHistory <= 91) {
+            resultHistory = 4;
         } else {
-            
+            resultHistory = 5;
         }
 
+        if (percProgramming <=60) {
+            resultProgramming = 2;
+        } else if (percProgramming > 60 && percProgramming <= 73) {
+            resultProgramming = 3;    
+        } else if (percProgramming > 73 && percProgramming <= 91) {
+            resultProgramming = 4;
+        } else {
+            resultProgramming = 5;
+        }
+
+        averageResult = (resultHistory + resultProgramming)/2;
+        averagePers = (percHistory + percProgramming)/2;
+
+        System.out.println("History: " + resultHistory);
+        System.out.println("Programing: " + resultProgramming);
+        System.out.println("Average result: " + averageResult);
+        System.out.println("Average persantages: " + averagePers);
+
         System.out.println();
+
+        //8. Расчет прибыли (убытка)
+
+        System.out.println("8. Расчет прибыли (убытка)");
+        
+        int rent = 5000;
+        int sales = 15000;
+        int costPrice = 9000;
+        int profit;
+        char signNumber;
+
+        profit = (sales - costPrice - rent)*12;
+
+        if (profit>=0) {
+            signNumber = '+';
+        } else {
+            signNumber = '-';            
+        }
+
+        System.out.println("Прибыль за год: " + signNumber + profit);
+
+        System.out.println();
+
+        //9. Определение существования треугольника
+
+        System.out.println("9. Определение существования треугольника");
+
+        int sideA = 3; int sideB = 4; int sideC = 5;
+        int cat1; int cat2; int hyp;
+        int area;
+        boolean isTriangle;
+
+        if (sideA >= sideB && sideA >= sideC) {
+            cat1 = sideB; cat2 = sideC; hyp = sideA;
+        } else if (sideB >= sideA && sideB >= sideC) {
+            cat1 = sideA; cat2 = sideC; hyp = sideB;
+        } else {
+            cat1 = sideA; cat2 = sideB; hyp = sideC;    
+        }
+
+        if (cat1*cat1 + cat2*cat2 == hyp*hyp) {
+            isTriangle = true;    
+        } else {
+            isTriangle = false;            
+        }
+
+        area = cat1*cat2/2;
+
+        System.out.println("Возможность существования треугольника: " + isTriangle);
+        System.out.println("Катет, катет, гипотенуза: " + cat1 + ", " + cat2+ ", " + hyp);
+        System.out.println("Площадь: " + area);
+
+        System.out.println();
+
+        //10. Подсчет количества банкнот
+
+        System.out.println("10. Подсчет количества банкнот");
+
+        //tdebt
 
     }
 
