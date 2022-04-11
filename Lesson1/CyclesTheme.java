@@ -157,7 +157,7 @@ public class CyclesTheme {
                 }
                 i--;
                 System.out.printf(symbol);
-            } while (i-j+1 > 0);
+            } while (i-j >= 0);
             System.out.println();
             j++;
  
