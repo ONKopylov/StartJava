@@ -192,9 +192,66 @@ public class CyclesTheme {
         System.out.println();
 
         //9. Определение, является ли число счастливым
+        System.out.println("9. Определение, является ли число счастливым");
 
+        num = 124321;
+        int num2 = num;
+        int sum1 = 0, sum2 = 0, counter = 1;
 
+        while (num !=0) {
+            if (counter <= 3) {
+                sum1 = sum1 + num%10;
+            } else {
+                sum2 = sum2 + num%10;
+            }
+            num/=10;
+            counter++;
+        }
 
+        if (sum1 == sum2) {
+            System.out.println("Число: " + num2 + " счастливое!");
+        } else {
+            System.out.println("Число: " + num2 + " НЕ счастливое!");
+        }
+
+        System.out.println();
+
+        //10. Вывод таблицы умножения Пифагора
+        System.out.println("10. Вывод таблицы умножения Пифагора");
+
+        for (int p = 0; p < 9; p++) {
+            for (int q = 0; q < 9; q++) {
+                if (q == 1) {
+                    System.out.printf("|");
+                }
+                System.out.printf("%5d", (p+1)*(q+1));
+            }
+            if (p==0) {
+                System.out.println();
+                System.out.println("_______________________________________________");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+
+        //7. Отображение ASCII-символов
+        System.out.println("7. Отображение ASCII-символов");
+
+        char asciiChar;
+
+        System.out.println("Dec Char");
+
+        for (int l = 0; l < 12; l++) {
+            System.out.printf("%2d", l);
+            System.out.println(" " + (char)l);
+        }
+
+        for (int l = 0; l < 12; l++) {
+            if (l%2 == 0) {
+                System.out.println((char)l);
+            }
+        }
 
     }
 }
