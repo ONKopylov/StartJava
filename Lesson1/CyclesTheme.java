@@ -167,7 +167,21 @@ public class CyclesTheme {
 
         //7. Отображение ASCII-символов
         System.out.println("7. Отображение ASCII-символов");
-        //tdebt
+
+        char asciiChar;
+
+        System.out.println("Dec Char");
+
+        for (int l = 0; l < 12; l++) {
+            System.out.printf("%2d", l);
+            System.out.println(" " + (char)l);
+        }
+
+        for (int l = 0; l < 12; l++) {
+            if (l%2 == 0) {
+                System.out.println((char)l);
+            }
+        }
 
         System.out.println();
 
@@ -234,24 +248,6 @@ public class CyclesTheme {
         }
 
         System.out.println();
-
-        //7. Отображение ASCII-символов
-        System.out.println("7. Отображение ASCII-символов");
-
-        char asciiChar;
-
-        System.out.println("Dec Char");
-
-        for (int l = 0; l < 12; l++) {
-            System.out.printf("%2d", l);
-            System.out.println(" " + (char)l);
-        }
-
-        for (int l = 0; l < 12; l++) {
-            if (l%2 == 0) {
-                System.out.println((char)l);
-            }
-        }
 
     }
 }

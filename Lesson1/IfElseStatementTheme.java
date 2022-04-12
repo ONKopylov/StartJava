@@ -27,7 +27,7 @@ public class IfElseStatementTheme {
         if (growth < 1.8) {
             System.out.println("Подрастете до 1м 80см, тогда и приходите!");
         } else {
-            System.out.println("У вас подходящий рос!");
+            System.out.println("У вас подходящий рост!");
         }
 
         firstLetterName = name.charAt(0);
