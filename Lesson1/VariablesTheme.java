@@ -152,5 +152,10 @@ public class VariablesTheme  {
 
         System.out.println("9. Output number of hundreds, tens and units");
         System.out.println("HH:MM:SS: " + hh + ":" + mm + ":" + ss);
+
+        byte b = 127;
+        b++;
+        System.out.println(b);
+        System.out.println("1+1=java");
     }
 }
