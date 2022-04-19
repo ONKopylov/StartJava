@@ -1,6 +1,6 @@
 public class Jaeger {
     
-    String modelName = "Bracer Phoenix";
+    private String modelName = "Bracer Phoenix";
     String mark = "Mark-5";
     String origin = "USA";
     float height = 70.7f;
@@ -9,20 +9,32 @@ public class Jaeger {
     int strength = 8;
     int armor = 9;
 
-    boolean drift() {
+    public String getModelName() {
+        return modelName;
+    }
+
+    void setModelName(String modelName) {
+        if (modelName == "") {
+            System.out.println("Empty string!!!");
+        } else {
+            this.modelName = modelName;
+        }
+    }
+
+    public boolean drift() {
         System.out.println("You are in drift!");
         return true;
     }
 
-    void move() {
+    public void move() {
         System.out.println("Вы прошли 5 шагов!");
     }
 
-    String scanKaiju() {
+    public String scanKaiju() {
         return "nothing";
     }
 
-    void useVortexCannon() {
+    public void useVortexCannon() {
 
     }
 }
