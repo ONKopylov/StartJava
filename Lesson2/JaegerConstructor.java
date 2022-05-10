@@ -1,10 +1,18 @@
-public class Jaeger {
-    
+public class JaegerConstructor {
+
     private String modelName;
     private String mark;
     private String origin;
     private float height;
     private float weight;
+
+    public JaegerConstructor(String modelName, String mark, String origin, float height, float weight) {
+        this.modelName = modelName;
+        this.mark = mark;
+        this.origin = origin;
+        this.height = height;
+        this.weight = weight;
+    }
 
     public String getModelName() {
         return modelName;
@@ -63,17 +71,19 @@ public class Jaeger {
         System.out.println("Fire!");
     }
 
-    /*public String toString() {
-        return "modelName = " + modelName + "mark = " + mark;
-    }*/
+    /*
+     * public String toString() {
+     * return "modelName = " + modelName + "mark = " + mark;
+     * }
+     */
 
     public String toString() {
-        return "Main{" + 
-            "modelName = " + modelName + "|" +
-            "mark = " + mark + "|" +
-            "origin = " + origin + "|" +
-            "height = " + height + "|" +
-            "weight = " + weight +
-            '}';
+        return "Main{" +
+                "modelName = " + modelName + "|" +
+                "mark = " + mark + "|" +
+                "origin = " + origin + "|" +
+                "height = " + height + "|" +
+                "weight = " + weight +
+                '}';
     }
 }

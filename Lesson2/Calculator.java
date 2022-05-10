@@ -1,6 +1,5 @@
 public class Calculator {
 
-    // TODO +, -, *, /, ^, %
     private int firstNumber;
     private int secondNumber;
     private char mathOperation;
@@ -17,57 +16,40 @@ public class Calculator {
         this.mathOperation = mathOperation;
     }
 
-    int calculate(int firstNumber, int secondNumber, char mathOperation) {
-
-        /*
-         * if(mathOperation == '+') {
-         * return(firstNumber + secondNumber);
-         * }else if(mathOperation == '-') {
-         * return(firstNumber - secondNumber);
-         * }else if(mathOperation=='*') {
-         * return(firstNumber * secondNumber);
-         * }else if(mathOperation=='/') {
-         * return(firstNumber / secondNumber);
-         * }else if(mathOperation=='^') {
-         * int result = 1;
-         * for (int i = 0; i < secondNumber; i++) {
-         * result *= firstNumber;
-         * }
-         * return(result);
-         * }else if(mathOperation=='%') {
-         * return(firstNumber % secondNumber);
-         * } else {
-         * System.out.println("Uncorrect math operation!!!");
-         * return 0;
-         * }
-         */
+    public void calculate(int firstNumber, int secondNumber, char mathOperation) {
 
         switch (mathOperation) {
             case '+':
-                return (firstNumber + secondNumber);
-            // break;
+            System.out.println(firstNumber + secondNumber);
+            break;
             case '-':
-                return (firstNumber - secondNumber);
-            // break;
+                System.out.println (firstNumber - secondNumber);
+            break;
             case '*':
-                return (firstNumber * secondNumber);
-            // break;
+                System.out.println (firstNumber * secondNumber);
+            break;
             case '/':
-                return (firstNumber / secondNumber);
-            // break;
+                System.out.println (firstNumber / secondNumber);
+            break;
             case '^':
-                int result = 1;
-                for (int i = 0; i < secondNumber; i++) {
-                    result *= firstNumber;
-                }
-                return result;
-            // break;
+                pow();
+            break;
             case '%':
-                return (firstNumber % secondNumber);
-            // break;
+                System.out.println (firstNumber % secondNumber);
+            break;
             default:
                 System.out.println("Uncorrect math operation!!!");
-                return 0;
         }
     }
+
+    //private void pow(int firstNumber, int secondNumber) {
+    private void pow() {
+        int result = 1;
+        for (int i = 0; i < secondNumber; i++) {
+            result *= firstNumber;
+        }
+        System.out.println (result);
+    }
 }
+
+
