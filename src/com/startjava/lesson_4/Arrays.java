@@ -39,7 +39,7 @@ public class Arrays {
 
 // Применим метод. Ищем по буквам "мур":
 
-        List<String> words = searchFromStart(catNamesArray, "мур");
+        ArrayList<String> words = searchFromStart(catNamesArray, "мур");
 
     }
 
